@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "motivationalquotesdaily",
-    "slug": "motivationalquotesdaily",
+    "name": "Motivational Quotes - Novus",
+    "slug": "novus",
     "version": "1.0.0",
     "scheme": "novus",
     "orientation": "portrait",
@@ -17,6 +17,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.tolgaozgun.novus",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -30,6 +31,12 @@
     "plugins": [
       "expo-router",
       "expo-asset"
-    ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "98d6965d-ffea-4f1f-8e5d-9facdbb87720"
+      }
+    }
   }
 }

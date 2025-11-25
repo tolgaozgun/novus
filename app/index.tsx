@@ -9,7 +9,7 @@ import { useFavorites } from '../context/FavoritesContext';
 import { useRouter } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import { BlurView } from 'expo-blur';
-import { scheduleDailyNotification } from '../utils/notifications';
+
 import { useTheme } from '../context/ThemeContext';
 
 const { height } = Dimensions.get('window');
@@ -20,9 +20,7 @@ export default function FeedScreen() {
     const { isFavorite, toggleFavorite } = useFavorites();
     const { theme } = useTheme();
 
-    useEffect(() => {
-        scheduleDailyNotification();
-    }, []);
+
 
     const handleShare = (quote: Quote) => {
         console.log('Share', quote);
