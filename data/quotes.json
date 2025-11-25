@@ -1,0 +1,302 @@
+[
+  {
+    "id": "q1",
+    "text": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "category": "Work"
+  },
+  {
+    "id": "q2",
+    "text": "Believe you can and you're halfway there.",
+    "author": "Theodore Roosevelt",
+    "category": "Motivation"
+  },
+  {
+    "id": "q3",
+    "text": "Your time is limited, so don't waste it living someone else's life.",
+    "author": "Steve Jobs",
+    "category": "Life"
+  },
+  {
+    "id": "q4",
+    "text": "The future belongs to those who believe in the beauty of their dreams.",
+    "author": "Eleanor Roosevelt",
+    "category": "Dreams"
+  },
+  {
+    "id": "q5",
+    "text": "It does not matter how slowly you go as long as you do not stop.",
+    "author": "Confucius",
+    "category": "Perseverance"
+  },
+  {
+    "id": "q6",
+    "text": "Everything you’ve ever wanted is on the other side of fear.",
+    "author": "George Addair",
+    "category": "Courage"
+  },
+  {
+    "id": "q7",
+    "text": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+    "author": "Winston Churchill",
+    "category": "Success"
+  },
+  {
+    "id": "q8",
+    "text": "Hardships often prepare ordinary people for an extraordinary destiny.",
+    "author": "C.S. Lewis",
+    "category": "Adversity"
+  },
+  {
+    "id": "q9",
+    "text": "Believe in yourself. You are braver than you think, more talented than you know, and capable of more than you imagine.",
+    "author": "Roy T. Bennett",
+    "category": "Self-Belief"
+  },
+  {
+    "id": "q10",
+    "text": "I learned that courage was not the absence of fear, but the triumph over it. The brave man is not he who does not feel afraid, but he who conquers that fear.",
+    "author": "Nelson Mandela",
+    "category": "Courage"
+  },
+  {
+    "id": "q11",
+    "text": "There is only one thing that makes a dream impossible to achieve: the fear of failure.",
+    "author": "Paulo Coelho",
+    "category": "Dreams"
+  },
+  {
+    "id": "q12",
+    "text": "It’s not whether you get knocked down, it’s whether you get up.",
+    "author": "Vince Lombardi",
+    "category": "Resilience"
+  },
+  {
+    "id": "q13",
+    "text": "If you are working on something that you really care about, you don’t have to be pushed. The vision pulls you.",
+    "author": "Steve Jobs",
+    "category": "Passion"
+  },
+  {
+    "id": "q14",
+    "text": "People who are crazy enough to think they can change the world, are the ones who do.",
+    "author": "Rob Siltanen",
+    "category": "Innovation"
+  },
+  {
+    "id": "q15",
+    "text": "Failure will never overtake me if my determination to succeed is strong enough.",
+    "author": "Og Mandino",
+    "category": "Determination"
+  },
+  {
+    "id": "q16",
+    "text": "Entrepreneurs are great at dealing with uncertainty and also very good at minimizing risk. That’s the classic entrepreneur.",
+    "author": "Mohnish Pabrai",
+    "category": "Business"
+  },
+  {
+    "id": "q17",
+    "text": "We may encounter many defeats but we must not be defeated.",
+    "author": "Maya Angelou",
+    "category": "Resilience"
+  },
+  {
+    "id": "q18",
+    "text": "Knowing is not enough; we must apply. Wishing is not enough; we must do.",
+    "author": "Johann Wolfgang Von Goethe",
+    "category": "Action"
+  },
+  {
+    "id": "q19",
+    "text": "Imagine your life is perfect in every respect; what would it look like?",
+    "author": "Brian Tracy",
+    "category": "Vision"
+  },
+  {
+    "id": "q20",
+    "text": "We generate fears while we sit. We overcome them by action.",
+    "author": "Dr. Henry Link",
+    "category": "Action"
+  },
+  {
+    "id": "q21",
+    "text": "Whether you think you can or think you can’t, you’re right.",
+    "author": "Henry Ford",
+    "category": "Mindset"
+  },
+  {
+    "id": "q22",
+    "text": "Security is mostly a superstition. Life is either a daring adventure or nothing.",
+    "author": "Helen Keller",
+    "category": "Adventure"
+  },
+  {
+    "id": "q23",
+    "text": "The man who has confidence in himself gains the confidence of others.",
+    "author": "Hasidic Proverb",
+    "category": "Confidence"
+  },
+  {
+    "id": "q24",
+    "text": "The only limit to our realization of tomorrow will be our doubts of today.",
+    "author": "Franklin D. Roosevelt",
+    "category": "Future"
+  },
+  {
+    "id": "q25",
+    "text": "Creativity is intelligence having fun.",
+    "author": "Albert Einstein",
+    "category": "Creativity"
+  },
+  {
+    "id": "q26",
+    "text": "What you lack in talent can be made up with desire, hustle and giving 110% all the time.",
+    "author": "Don Zimmer",
+    "category": "Hustle"
+  },
+  {
+    "id": "q27",
+    "text": "Do what you can with all you have, wherever you are.",
+    "author": "Theodore Roosevelt",
+    "category": "Resourcefulness"
+  },
+  {
+    "id": "q28",
+    "text": "Develop an ‘attitude of gratitude’. Say thank you to everyone you meet for everything they do for you.",
+    "author": "Brian Tracy",
+    "category": "Gratitude"
+  },
+  {
+    "id": "q29",
+    "text": "You are never too old to set another goal or to dream a new dream.",
+    "author": "C.S. Lewis",
+    "category": "Dreams"
+  },
+  {
+    "id": "q30",
+    "text": "To see what is right and not do it is a lack of courage.",
+    "author": "Confucius",
+    "category": "Integrity"
+  },
+  {
+    "id": "q31",
+    "text": "Reading is to the mind what exercise is to the body.",
+    "author": "Joseph Addison",
+    "category": "Growth"
+  },
+  {
+    "id": "q32",
+    "text": "Fake it until you make it! Act as if you have all the confidence you require until it becomes your reality.",
+    "author": "Brian Tracy",
+    "category": "Confidence"
+  },
+  {
+    "id": "q33",
+    "text": "The future depends on what you do today.",
+    "author": "Mahatma Gandhi",
+    "category": "Action"
+  },
+  {
+    "id": "q34",
+    "text": "Don’t watch the clock; do what it does. Keep going.",
+    "author": "Sam Levenson",
+    "category": "Persistence"
+  },
+  {
+    "id": "q35",
+    "text": "If you can dream it, you can do it.",
+    "author": "Walt Disney",
+    "category": "Dreams"
+  },
+  {
+    "id": "q36",
+    "text": "A goal is not always meant to be reached, it often serves simply as something to aim at.",
+    "author": "Bruce Lee",
+    "category": "Goals"
+  },
+  {
+    "id": "q37",
+    "text": "Be miserable. Or motivate yourself. Whatever has to be done, it's always your choice.",
+    "author": "Wayne Dyer",
+    "category": "Choice"
+  },
+  {
+    "id": "q38",
+    "text": "I will love the light for it shows me the way, yet I will endure the darkness because it shows me the stars.",
+    "author": "Og Mandino",
+    "category": "Hope"
+  },
+  {
+    "id": "q39",
+    "text": "The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty.",
+    "author": "Winston Churchill",
+    "category": "Optimism"
+  },
+  {
+    "id": "q40",
+    "text": "Don’t let yesterday take up too much of today.",
+    "author": "Will Rogers",
+    "category": "Present"
+  },
+  {
+    "id": "q41",
+    "text": "You learn more from failure than from success. Don’t let it stop you. Failure builds character.",
+    "author": "Unknown",
+    "category": "Growth"
+  },
+  {
+    "id": "q42",
+    "text": "If you are not willing to risk the usual you will have to settle for the ordinary.",
+    "author": "Jim Rohn",
+    "category": "Risk"
+  },
+  {
+    "id": "q43",
+    "text": "The best way to predict the future is to create it.",
+    "author": "Peter Drucker",
+    "category": "Future"
+  },
+  {
+    "id": "q44",
+    "text": "Opportunities don't happen, you create them.",
+    "author": "Chris Grosser",
+    "category": "Opportunity"
+  },
+  {
+    "id": "q45",
+    "text": "It is never too late to be what you might have been.",
+    "author": "George Eliot",
+    "category": "Potential"
+  },
+  {
+    "id": "q46",
+    "text": "Don't be afraid to give up the good to go for the great.",
+    "author": "John D. Rockefeller",
+    "category": "Ambition"
+  },
+  {
+    "id": "q47",
+    "text": "I find that the harder I work, the more luck I seem to have.",
+    "author": "Thomas Jefferson",
+    "category": "Luck"
+  },
+  {
+    "id": "q48",
+    "text": "Success is walking from failure to failure with no loss of enthusiasm.",
+    "author": "Winston Churchill",
+    "category": "Success"
+  },
+  {
+    "id": "q49",
+    "text": "If you do what you've always done, you'll get what you've always gotten.",
+    "author": "Tony Robbins",
+    "category": "Change"
+  },
+  {
+    "id": "q50",
+    "text": "Dream big and dare to fail.",
+    "author": "Norman Vaughan",
+    "category": "Dreams"
+  }
+]

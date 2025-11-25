@@ -1,0 +1,40 @@
+export const Themes = {
+  dark: {
+    id: 'dark',
+    name: 'Midnight',
+    background: '#050505',
+    text: '#FFFFFF',
+    textSecondary: '#A0A0A0',
+    accent: '#00F0FF',
+    accentSecondary: '#7000FF',
+    cardBackground: 'rgba(20, 20, 20, 0.6)',
+    icon: '#FFFFFF',
+    heart: '#FF0055',
+  },
+  light: {
+    id: 'light',
+    name: 'Sunrise',
+    background: '#F0F0F0',
+    text: '#1A1A1A',
+    textSecondary: '#666666',
+    accent: '#FF9500',
+    accentSecondary: '#FF3B30',
+    cardBackground: 'rgba(255, 255, 255, 0.6)',
+    icon: '#1A1A1A',
+    heart: '#FF3B30',
+  },
+  nature: {
+    id: 'nature',
+    name: 'Forest',
+    background: '#1A2F1A',
+    text: '#E0F2E0',
+    textSecondary: '#8FBC8F',
+    accent: '#4CAF50',
+    accentSecondary: '#8BC34A',
+    cardBackground: 'rgba(30, 50, 30, 0.6)',
+    icon: '#E0F2E0',
+    heart: '#FF5252',
+  },
+};
+
+export const Colors = Themes.dark; // Default
