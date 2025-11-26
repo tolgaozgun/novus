@@ -10,6 +10,7 @@ export const Themes = {
     cardBackground: 'rgba(20, 20, 20, 0.6)',
     icon: '#FFFFFF',
     heart: '#FF0055',
+    tint: '#00F0FF',
   },
   light: {
     id: 'light',
@@ -22,6 +23,7 @@ export const Themes = {
     cardBackground: 'rgba(255, 255, 255, 0.6)',
     icon: '#1A1A1A',
     heart: '#FF3B30',
+    tint: '#FF9500',
   },
   nature: {
     id: 'nature',
@@ -34,6 +36,7 @@ export const Themes = {
     cardBackground: 'rgba(30, 50, 30, 0.6)',
     icon: '#E0F2E0',
     heart: '#FF5252',
+    tint: '#4CAF50',
   },
 };
 

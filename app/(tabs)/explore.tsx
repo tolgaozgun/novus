@@ -1,26 +1,21 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState } from 'react';
 import { View, FlatList, StyleSheet, Dimensions, TouchableOpacity } from 'react-native';
-import { QuoteCard } from '../components/QuoteCard';
-import quotesData from '../data/quotes.json';
-import { Quote } from '../types';
-import { Colors } from '../constants/Colors';
-
-import { useFavorites } from '../context/FavoritesContext';
+import { QuoteCard } from '../../components/QuoteCard';
+import quotesData from '../../data/quotes.json';
+import { Quote } from '../../types';
+import { useFavorites } from '../../context/FavoritesContext';
 import { useRouter } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import { BlurView } from 'expo-blur';
-
-import { useTheme } from '../context/ThemeContext';
+import { useTheme } from '../../context/ThemeContext';
 
 const { height } = Dimensions.get('window');
 
-export default function FeedScreen() {
+export default function ExploreScreen() {
     const router = useRouter();
     const [quotes] = useState<Quote[]>(quotesData);
     const { isFavorite, toggleFavorite } = useFavorites();
     const { theme } = useTheme();
-
-
 
     const handleShare = (quote: Quote) => {
         console.log('Share', quote);
@@ -57,11 +52,6 @@ export default function FeedScreen() {
             />
 
             <View style={styles.topActions}>
-                <TouchableOpacity onPress={() => router.push('/favorites')} style={styles.iconButtonWrapper}>
-                    <BlurView intensity={20} tint="dark" style={styles.iconButton}>
-                        <Ionicons name="albums-outline" size={24} color={theme.icon} />
-                    </BlurView>
-                </TouchableOpacity>
                 <TouchableOpacity onPress={() => router.push('/settings')} style={styles.iconButtonWrapper}>
                     <BlurView intensity={20} tint="dark" style={styles.iconButton}>
                         <Ionicons name="settings-outline" size={24} color={theme.icon} />

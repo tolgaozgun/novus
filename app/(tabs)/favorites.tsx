@@ -1,15 +1,13 @@
 import React from 'react';
 import { View, Text, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
-import { useRouter } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import { BlurView } from 'expo-blur';
-import { useFavorites } from '../context/FavoritesContext';
-import quotesData from '../data/quotes.json';
-import { Quote } from '../types';
-import { useTheme } from '../context/ThemeContext';
+import { useFavorites } from '../../context/FavoritesContext';
+import quotesData from '../../data/quotes.json';
+import { Quote } from '../../types';
+import { useTheme } from '../../context/ThemeContext';
 
 export default function FavoritesScreen() {
-    const router = useRouter();
     const { favorites, toggleFavorite } = useFavorites();
     const { theme } = useTheme();
 
@@ -31,9 +29,6 @@ export default function FavoritesScreen() {
     return (
         <View style={[styles.container, { backgroundColor: theme.background }]}>
             <BlurView intensity={80} tint="dark" style={[styles.header, { borderBottomColor: 'rgba(255,255,255,0.1)' }]}>
-                <TouchableOpacity onPress={() => router.back()} style={styles.backButton}>
-                    <Ionicons name="arrow-back" size={24} color={theme.text} />
-                </TouchableOpacity>
                 <Text style={[styles.title, { color: theme.text }]}>Your Collection</Text>
             </BlurView>
 
@@ -63,9 +58,6 @@ const styles = StyleSheet.create({
         paddingBottom: 20,
         paddingHorizontal: 20,
         borderBottomWidth: 1,
-    },
-    backButton: {
-        marginRight: 15,
     },
     title: {
         fontSize: 20,

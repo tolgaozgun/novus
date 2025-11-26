@@ -5,6 +5,7 @@ import { Colors } from '../constants/Colors';
 
 import { FavoritesProvider } from '../context/FavoritesContext';
 import { ThemeProvider, useTheme } from '../context/ThemeContext';
+import { JournalProvider } from '../context/JournalContext';
 
 function AppLayout() {
     const { theme } = useTheme();
@@ -27,7 +28,9 @@ export default function RootLayout() {
     return (
         <ThemeProvider>
             <FavoritesProvider>
-                <AppLayout />
+                <JournalProvider>
+                    <AppLayout />
+                </JournalProvider>
             </FavoritesProvider>
         </ThemeProvider>
     );

@@ -298,5 +298,905 @@
     "text": "Dream big and dare to fail.",
     "author": "Norman Vaughan",
     "category": "Dreams"
+  },
+  {
+    "id": "q51",
+    "text": "Act as if what you do makes a difference. It does.",
+    "author": "William James",
+    "category": "Action"
+  },
+  {
+    "id": "q52",
+    "text": "Success usually comes to those who are too busy to be looking for it.",
+    "author": "Henry David Thoreau",
+    "category": "Success"
+  },
+  {
+    "id": "q53",
+    "text": "Don't sit down and wait for the opportunities to come. Get up and make them.",
+    "author": "Madam C.J. Walker",
+    "category": "Opportunity"
+  },
+  {
+    "id": "q54",
+    "text": "If you want to achieve greatness stop asking for permission.",
+    "author": "Anonymous",
+    "category": "Greatness"
+  },
+  {
+    "id": "q55",
+    "text": "Things work out best for those who make the best of how things work out.",
+    "author": "John Wooden",
+    "category": "Attitude"
+  },
+  {
+    "id": "q56",
+    "text": "To live a creative life, we must lose our fear of being wrong.",
+    "author": "Joseph Chilton Pearce",
+    "category": "Creativity"
+  },
+  {
+    "id": "q57",
+    "text": "If you are not willing to risk the usual you will have to settle for the ordinary.",
+    "author": "Jim Rohn",
+    "category": "Risk"
+  },
+  {
+    "id": "q58",
+    "text": "Trust because you are willing to accept the risk, not because it's safe or certain.",
+    "author": "Anonymous",
+    "category": "Trust"
+  },
+  {
+    "id": "q59",
+    "text": "Take up one idea. Make that one idea your life - think of it, dream of it, live on it.",
+    "author": "Swami Vivekananda",
+    "category": "Focus"
+  },
+  {
+    "id": "q60",
+    "text": "All our dreams can come true if we have the courage to pursue them.",
+    "author": "Walt Disney",
+    "category": "Dreams"
+  },
+  {
+    "id": "q61",
+    "text": "Good things come to people who wait, but better things come to those who go out and get them.",
+    "author": "Anonymous",
+    "category": "Action"
+  },
+  {
+    "id": "q62",
+    "text": "If you do what you always did, you will get what you always got.",
+    "author": "Anonymous",
+    "category": "Change"
+  },
+  {
+    "id": "q63",
+    "text": "Success is walking from failure to failure with no loss of enthusiasm.",
+    "author": "Winston Churchill",
+    "category": "Success"
+  },
+  {
+    "id": "q64",
+    "text": "Just when the caterpillar thought the world was ending, he turned into a butterfly.",
+    "author": "Proverb",
+    "category": "Hope"
+  },
+  {
+    "id": "q65",
+    "text": "Successful entrepreneurs are givers and not takers of positive energy.",
+    "author": "Anonymous",
+    "category": "Energy"
+  },
+  {
+    "id": "q66",
+    "text": "Whenever you see a successful person you only see the public glories, never the private sacrifices to reach them.",
+    "author": "Vaibhav Shah",
+    "category": "Success"
+  },
+  {
+    "id": "q67",
+    "text": "Opportunities don't happen, you create them.",
+    "author": "Chris Grosser",
+    "category": "Opportunity"
+  },
+  {
+    "id": "q68",
+    "text": "Try not to become a person of success, but rather try to become a person of value.",
+    "author": "Albert Einstein",
+    "category": "Value"
+  },
+  {
+    "id": "q69",
+    "text": "Great minds discuss ideas; average minds discuss events; small minds discuss people.",
+    "author": "Eleanor Roosevelt",
+    "category": "Mindset"
+  },
+  {
+    "id": "q70",
+    "text": "I have not failed. I've just found 10,000 ways that won't work.",
+    "author": "Thomas A. Edison",
+    "category": "Perseverance"
+  },
+  {
+    "id": "q71",
+    "text": "If you don't value your time, neither will others. Stop giving away your time and talents- start charging for it.",
+    "author": "Kim Garst",
+    "category": "Value"
+  },
+  {
+    "id": "q72",
+    "text": "A successful man is one who can lay a firm foundation with the bricks others have thrown at him.",
+    "author": "David Brinkley",
+    "category": "Success"
+  },
+  {
+    "id": "q73",
+    "text": "No one can make you feel inferior without your consent.",
+    "author": "Eleanor Roosevelt",
+    "category": "Self-Worth"
+  },
+  {
+    "id": "q74",
+    "text": "The whole secret of a successful life is to find out what is one's destiny to do, and then do it.",
+    "author": "Henry Ford",
+    "category": "Purpose"
+  },
+  {
+    "id": "q75",
+    "text": "If you're going through hell keep going.",
+    "author": "Winston Churchill",
+    "category": "Perseverance"
+  },
+  {
+    "id": "q76",
+    "text": "The ones who are crazy enough to think they can change the world, are the ones who do.",
+    "author": "Anonymous",
+    "category": "Change"
+  },
+  {
+    "id": "q77",
+    "text": "Don't raise your voice, improve your argument.",
+    "author": "Anonymous",
+    "category": "Wisdom"
+  },
+  {
+    "id": "q78",
+    "text": "What seems to us as bitter trials are often blessings in disguise.",
+    "author": "Oscar Wilde",
+    "category": "Perspective"
+  },
+  {
+    "id": "q79",
+    "text": "The meaning of life is to find your gift. The purpose of life is to give it away.",
+    "author": "Anonymous",
+    "category": "Purpose"
+  },
+  {
+    "id": "q80",
+    "text": "The distance between insanity and genius is measured only by success.",
+    "author": "Bruce Feirstein",
+    "category": "Success"
+  },
+  {
+    "id": "q81",
+    "text": "When you stop chasing the wrong things, you give the right things a chance to catch you.",
+    "author": "Lolly Daskal",
+    "category": "Wisdom"
+  },
+  {
+    "id": "q82",
+    "text": "Don't be afraid to give up the good to go for the great.",
+    "author": "John D. Rockefeller",
+    "category": "Ambition"
+  },
+  {
+    "id": "q83",
+    "text": "No masterpiece was ever created by a lazy artist.",
+    "author": "Anonymous",
+    "category": "Effort"
+  },
+  {
+    "id": "q84",
+    "text": "Happiness is not something ready made. It comes from your own actions.",
+    "author": "Dalai Lama",
+    "category": "Happiness"
+  },
+  {
+    "id": "q85",
+    "text": "If you can't explain it simply, you don't understand it well enough.",
+    "author": "Albert Einstein",
+    "category": "Knowledge"
+  },
+  {
+    "id": "q86",
+    "text": "Blessed are those who can give without remembering and take without forgetting.",
+    "author": "Anonymous",
+    "category": "Gratitude"
+  },
+  {
+    "id": "q87",
+    "text": "Do one thing every day that scares you.",
+    "author": "Anonymous",
+    "category": "Courage"
+  },
+  {
+    "id": "q88",
+    "text": "What's the point of being alive if you don't at least try to do something remarkable?",
+    "author": "Anonymous",
+    "category": "Purpose"
+  },
+  {
+    "id": "q89",
+    "text": "Life is not about finding yourself. Life is about creating yourself.",
+    "author": "Lolly Daskal",
+    "category": "Life"
+  },
+  {
+    "id": "q90",
+    "text": "Nothing in the world is more common than unsuccessful people with talent.",
+    "author": "Anonymous",
+    "category": "Persistence"
+  },
+  {
+    "id": "q91",
+    "text": "Knowledge is being aware of what you can do. Wisdom is knowing when not to do it.",
+    "author": "Anonymous",
+    "category": "Wisdom"
+  },
+  {
+    "id": "q92",
+    "text": "Your problem isn't the problem. Your reaction is the problem.",
+    "author": "Anonymous",
+    "category": "Mindset"
+  },
+  {
+    "id": "q93",
+    "text": "You can do anything, but not everything.",
+    "author": "Anonymous",
+    "category": "Focus"
+  },
+  {
+    "id": "q94",
+    "text": "Innovation distinguishes between a leader and a follower.",
+    "author": "Steve Jobs",
+    "category": "Leadership"
+  },
+  {
+    "id": "q95",
+    "text": "There are two types of people who will tell you that you cannot make a difference in this world: those who are afraid to try and those who are afraid you will succeed.",
+    "author": "Ray Goforth",
+    "category": "Courage"
+  },
+  {
+    "id": "q96",
+    "text": "Thinking should become your capital asset, no matter whatever ups and downs you come across in your life.",
+    "author": "A.P.J. Abdul Kalam",
+    "category": "Wisdom"
+  },
+  {
+    "id": "q97",
+    "text": "I find that the harder I work, the more luck I seem to have.",
+    "author": "Thomas Jefferson",
+    "category": "Luck"
+  },
+  {
+    "id": "q98",
+    "text": "The starting point of all achievement is desire.",
+    "author": "Napoleon Hill",
+    "category": "Desire"
+  },
+  {
+    "id": "q99",
+    "text": "Success is the sum of small efforts, repeated day-in and day-out.",
+    "author": "Robert Collier",
+    "category": "Consistency"
+  },
+  {
+    "id": "q100",
+    "text": "If you want to achieve excellence, you can get there today. As of this second, quit doing less-than-excellent work.",
+    "author": "Thomas J. Watson",
+    "category": "Excellence"
+  },
+  {
+    "id": "q101",
+    "text": "All progress takes place outside the comfort zone.",
+    "author": "Michael John Bobak",
+    "category": "Growth"
+  },
+  {
+    "id": "q102",
+    "text": "You may only succeed if you desire succeeding; you may only fail if you do not mind failing.",
+    "author": "Philippos",
+    "category": "Desire"
+  },
+  {
+    "id": "q103",
+    "text": "Courage is resistance to fear, mastery of fear - not absence of fear.",
+    "author": "Mark Twain",
+    "category": "Courage"
+  },
+  {
+    "id": "q104",
+    "text": "Only put off until tomorrow what you are willing to die having left undone.",
+    "author": "Pablo Picasso",
+    "category": "Procrastination"
+  },
+  {
+    "id": "q105",
+    "text": "People often say that motivation doesn't last. Well, neither does bathing - that's why we recommend it daily.",
+    "author": "Zig Ziglar",
+    "category": "Motivation"
+  },
+  {
+    "id": "q106",
+    "text": "We become what we think about most of the time, and that's the strangest secret.",
+    "author": "Earl Nightingale",
+    "category": "Mindset"
+  },
+  {
+    "id": "q107",
+    "text": "The only place where success comes before work is in the dictionary.",
+    "author": "Vidal Sassoon",
+    "category": "Work"
+  },
+  {
+    "id": "q108",
+    "text": "Too many of us are not living our dreams because we are living our fears.",
+    "author": "Les Brown",
+    "category": "Fear"
+  },
+  {
+    "id": "q109",
+    "text": "I find that when you have a real interest in life and a curious life, that sleep is not the most important thing.",
+    "author": "Martha Stewart",
+    "category": "Passion"
+  },
+  {
+    "id": "q110",
+    "text": "It's not what you look at that matters, it's what you see.",
+    "author": "Anonymous",
+    "category": "Perspective"
+  },
+  {
+    "id": "q111",
+    "text": "The road to success and the road to failure are almost exactly the same.",
+    "author": "Colin R. Davis",
+    "category": "Success"
+  },
+  {
+    "id": "q112",
+    "text": "The function of leadership is to produce more leaders, not more followers.",
+    "author": "Ralph Nader",
+    "category": "Leadership"
+  },
+  {
+    "id": "q113",
+    "text": "Success is liking yourself, liking what you do, and liking how you do it.",
+    "author": "Maya Angelou",
+    "category": "Success"
+  },
+  {
+    "id": "q114",
+    "text": "As we look ahead into the next century, leaders will be those who empower others.",
+    "author": "Bill Gates",
+    "category": "Leadership"
+  },
+  {
+    "id": "q115",
+    "text": "A real entrepreneur is somebody who has no safety net underneath them.",
+    "author": "Henry Kravis",
+    "category": "Business"
+  },
+  {
+    "id": "q116",
+    "text": "The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself.",
+    "author": "Mark Caine",
+    "category": "Success"
+  },
+  {
+    "id": "q117",
+    "text": "People who succeed have momentum. The more they succeed, the more they want to succeed, and the more they find a way to succeed.",
+    "author": "Tony Robbins",
+    "category": "Momentum"
+  },
+  {
+    "id": "q118",
+    "text": "When I dare to be powerful - to use my strength in the service of my vision, then it becomes less and less important whether I am afraid.",
+    "author": "Audre Lorde",
+    "category": "Strength"
+  },
+  {
+    "id": "q119",
+    "text": "Whenever you find yourself on the side of the majority, it is time to pause and reflect.",
+    "author": "Mark Twain",
+    "category": "Wisdom"
+  },
+  {
+    "id": "q120",
+    "text": "The successful warrior is the average man, with laser-like focus.",
+    "author": "Bruce Lee",
+    "category": "Focus"
+  },
+  {
+    "id": "q121",
+    "text": "Develop success from failures. Discouragement and failure are two of the surest stepping stones to success.",
+    "author": "Dale Carnegie",
+    "category": "Failure"
+  },
+  {
+    "id": "q122",
+    "text": "If you don't design your own life plan, chances are you'll fall into someone else's plan. And guess what they have planned for you? Not much.",
+    "author": "Jim Rohn",
+    "category": "Planning"
+  },
+  {
+    "id": "q123",
+    "text": "If you genuinely want something, don't wait for it -- teach yourself to be impatient.",
+    "author": "Gurbaksh Chahal",
+    "category": "Desire"
+  },
+  {
+    "id": "q124",
+    "text": "Don't let the fear of losing be greater than the excitement of winning.",
+    "author": "Robert Kiyosaki",
+    "category": "Fear"
+  },
+  {
+    "id": "q125",
+    "text": "If you want to make a permanent change, stop focusing on the size of your problems and start focusing on the size of you!",
+    "author": "T. Harv Eker",
+    "category": "Change"
+  },
+  {
+    "id": "q126",
+    "text": "You can't connect the dots looking forward; you can only connect them looking backwards. So you have to trust that the dots will somehow connect in your future.",
+    "author": "Steve Jobs",
+    "category": "Trust"
+  },
+  {
+    "id": "q127",
+    "text": "Successful people do what unsuccessful people are not willing to do. Don't wish it were easier; wish you were better.",
+    "author": "Jim Rohn",
+    "category": "Success"
+  },
+  {
+    "id": "q128",
+    "text": "The number one reason people fail in life is because they listen to their friends, family, and neighbors.",
+    "author": "Napoleon Hill",
+    "category": "Failure"
+  },
+  {
+    "id": "q129",
+    "text": "The reason most people never reach their goals is that they don't define them, or ever seriously consider them as believable or achievable.",
+    "author": "Denis Waitley",
+    "category": "Goals"
+  },
+  {
+    "id": "q130",
+    "text": "In my experience, there is only one motivation, and that is desire. No reasons or principle contain it or stand against it.",
+    "author": "Jane Smiley",
+    "category": "Motivation"
+  },
+  {
+    "id": "q131",
+    "text": "Success does not consist in never making mistakes but in never making the same one a second time.",
+    "author": "George Bernard Shaw",
+    "category": "Mistakes"
+  },
+  {
+    "id": "q132",
+    "text": "I don't want to get to the end of my life and find that I lived just the length of it. I want to have lived the width of it as well.",
+    "author": "Diane Ackerman",
+    "category": "Life"
+  },
+  {
+    "id": "q133",
+    "text": "Motivation is what gets you started. Habit is what keeps you going.",
+    "author": "Jim Ryun",
+    "category": "Habit"
+  },
+  {
+    "id": "q134",
+    "text": "Our greatest fear should not be of failure but of succeeding at things in life that don't really matter.",
+    "author": "Francis Chan",
+    "category": "Purpose"
+  },
+  {
+    "id": "q135",
+    "text": "If you don't build your dream, someone else will hire you to help them build theirs.",
+    "author": "Dhirubhai Ambani",
+    "category": "Dreams"
+  },
+  {
+    "id": "q136",
+    "text": "Be not afraid of life. Believe that life is worth living, and your belief will help create the fact.",
+    "author": "William James",
+    "category": "Life"
+  },
+  {
+    "id": "q137",
+    "text": "When I stand before God at the end of my life, I would hope that I would not have a single bit of talent left and could say, I used everything you gave me.",
+    "author": "Erma Bombeck",
+    "category": "Life"
+  },
+  {
+    "id": "q138",
+    "text": "The quickest way to double your money is to fold it over and put it back in your pocket.",
+    "author": "Will Rogers",
+    "category": "Humor"
+  },
+  {
+    "id": "q139",
+    "text": "Even if you’re on the right track, you’ll get run over if you just sit there.",
+    "author": "Will Rogers",
+    "category": "Action"
+  },
+  {
+    "id": "q140",
+    "text": "When I hear somebody sigh, 'Life is hard,' I am always tempted to ask, 'Compared to what?'",
+    "author": "Sydney Harris",
+    "category": "Perspective"
+  },
+  {
+    "id": "q141",
+    "text": "Nurture your mind with great thoughts. To believe in the heroic makes heroes.",
+    "author": "Benjamin Disraeli",
+    "category": "Mindset"
+  },
+  {
+    "id": "q142",
+    "text": "The real opportunity for success lies within the person and not in the job.",
+    "author": "Zig Ziglar",
+    "category": "Success"
+  },
+  {
+    "id": "q143",
+    "text": "Look at the sparrows; they do not know what they will do in the next moment. Let us literally live from moment to moment.",
+    "author": "Mahatma Gandhi",
+    "category": "Mindfulness"
+  },
+  {
+    "id": "q144",
+    "text": "Luck is a dividend of sweat. The more you sweat, the luckier you get.",
+    "author": "Ray Kroc",
+    "category": "Luck"
+  },
+  {
+    "id": "q145",
+    "text": "When I let go of what I am, I become what I might be.",
+    "author": "Lao Tzu",
+    "category": "Growth"
+  },
+  {
+    "id": "q146",
+    "text": "You may find the worst enemy or best friend in yourself.",
+    "author": "English Proverb",
+    "category": "Self"
+  },
+  {
+    "id": "q147",
+    "text": "Whoever loves much, performs much, and can accomplish much, and what is done in love is done well.",
+    "author": "Vincent Van Gogh",
+    "category": "Love"
+  },
+  {
+    "id": "q148",
+    "text": "The only way to have a friend is to be one.",
+    "author": "Ralph Waldo Emerson",
+    "category": "Friendship"
+  },
+  {
+    "id": "q149",
+    "text": "Go confidently in the direction of your dreams. Live the life you have imagined.",
+    "author": "Henry David Thoreau",
+    "category": "Dreams"
+  },
+  {
+    "id": "q150",
+    "text": "Keep your face always toward the sunshine - and shadows will fall behind you.",
+    "author": "Walt Whitman",
+    "category": "Optimism"
+  },
+  {
+    "id": "q151",
+    "text": "The best preparation for tomorrow is doing your best today.",
+    "author": "H. Jackson Brown, Jr.",
+    "category": "Preparation"
+  },
+  {
+    "id": "q152",
+    "text": "Start where you are. Use what you have. Do what you can.",
+    "author": "Arthur Ashe",
+    "category": "Action"
+  },
+  {
+    "id": "q153",
+    "text": "I attribute my success to this: I never gave or took any excuse.",
+    "author": "Florence Nightingale",
+    "category": "Success"
+  },
+  {
+    "id": "q154",
+    "text": "Two roads diverged in a wood, and I—I took the one less traveled by, And that has made all the difference.",
+    "author": "Robert Frost",
+    "category": "Choice"
+  },
+  {
+    "id": "q155",
+    "text": "What you get by achieving your goals is not as important as what you become by achieving your goals.",
+    "author": "Zig Ziglar",
+    "category": "Growth"
+  },
+  {
+    "id": "q156",
+    "text": "You can never cross the ocean until you have the courage to lose sight of the shore.",
+    "author": "Christopher Columbus",
+    "category": "Courage"
+  },
+  {
+    "id": "q157",
+    "text": "I am not a product of my circumstances. I am a product of my decisions.",
+    "author": "Stephen Covey",
+    "category": "Choice"
+  },
+  {
+    "id": "q158",
+    "text": "Every child is an artist. The problem is how to remain an artist once he grows up.",
+    "author": "Pablo Picasso",
+    "category": "Creativity"
+  },
+  {
+    "id": "q159",
+    "text": "You can't use up creativity. The more you use, the more you have.",
+    "author": "Maya Angelou",
+    "category": "Creativity"
+  },
+  {
+    "id": "q160",
+    "text": "Dreaming, after all, is a form of planning.",
+    "author": "Gloria Steinem",
+    "category": "Dreams"
+  },
+  {
+    "id": "q161",
+    "text": "It's your place in the world; it's your life. Go on and do all you can with it, and make it the life you want to live.",
+    "author": "Mae Jemison",
+    "category": "Life"
+  },
+  {
+    "id": "q162",
+    "text": "You may be disappointed if you fail, but you are doomed if you don't try.",
+    "author": "Beverly Sills",
+    "category": "Failure"
+  },
+  {
+    "id": "q163",
+    "text": "Remember that not getting what you want is sometimes a wonderful stroke of luck.",
+    "author": "Dalai Lama",
+    "category": "Luck"
+  },
+  {
+    "id": "q164",
+    "text": "The only person you are destined to become is the person you decide to be.",
+    "author": "Ralph Waldo Emerson",
+    "category": "Destiny"
+  },
+  {
+    "id": "q165",
+    "text": "Go to the people. Live with them. Learn from them. Love them.",
+    "author": "Lao Tzu",
+    "category": "Leadership"
+  },
+  {
+    "id": "q166",
+    "text": "Life is what happens to you while you're busy making other plans.",
+    "author": "John Lennon",
+    "category": "Life"
+  },
+  {
+    "id": "q167",
+    "text": "We can't help everyone, but everyone can help someone.",
+    "author": "Ronald Reagan",
+    "category": "Service"
+  },
+  {
+    "id": "q168",
+    "text": "Everything has beauty, but not everyone can see.",
+    "author": "Confucius",
+    "category": "Perspective"
+  },
+  {
+    "id": "q169",
+    "text": "How wonderful it is that nobody need wait a single moment before starting to improve the world.",
+    "author": "Anne Frank",
+    "category": "Action"
+  },
+  {
+    "id": "q170",
+    "text": "When you reach the end of your rope, tie a knot in it and hang on.",
+    "author": "Franklin D. Roosevelt",
+    "category": "Perseverance"
+  },
+  {
+    "id": "q171",
+    "text": "The best revenge is massive success.",
+    "author": "Frank Sinatra",
+    "category": "Success"
+  },
+  {
+    "id": "q172",
+    "text": "Life is 10% what happens to me and 90% of how I react to it.",
+    "author": "Charles Swindoll",
+    "category": "Attitude"
+  },
+  {
+    "id": "q173",
+    "text": "Believe you can and you're halfway there.",
+    "author": "Theodore Roosevelt",
+    "category": "Belief"
+  },
+  {
+    "id": "q174",
+    "text": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "category": "Work"
+  },
+  {
+    "id": "q175",
+    "text": "Change your thoughts and you change your world.",
+    "author": "Norman Vincent Peale",
+    "category": "Mindset"
+  },
+  {
+    "id": "q176",
+    "text": "It is during our darkest moments that we must focus to see the light.",
+    "author": "Aristotle",
+    "category": "Hope"
+  },
+  {
+    "id": "q177",
+    "text": "Don't judge each day by the harvest you reap but by the seeds that you plant.",
+    "author": "Robert Louis Stevenson",
+    "category": "Patience"
+  },
+  {
+    "id": "q178",
+    "text": "The only thing we have to fear is fear itself.",
+    "author": "Franklin D. Roosevelt",
+    "category": "Fear"
+  },
+  {
+    "id": "q179",
+    "text": "Darkness cannot drive out darkness: only light can do that. Hate cannot drive out hate: only love can do that.",
+    "author": "Martin Luther King Jr.",
+    "category": "Love"
+  },
+  {
+    "id": "q180",
+    "text": "Do not go where the path may lead, go instead where there is no path and leave a trail.",
+    "author": "Ralph Waldo Emerson",
+    "category": "Leadership"
+  },
+  {
+    "id": "q181",
+    "text": "In the end, it's not the years in your life that count. It's the life in your years.",
+    "author": "Abraham Lincoln",
+    "category": "Life"
+  },
+  {
+    "id": "q182",
+    "text": "You only live once, but if you do it right, once is enough.",
+    "author": "Mae West",
+    "category": "Life"
+  },
+  {
+    "id": "q183",
+    "text": "Many of life's failures are people who did not realize how close they were to success when they gave up.",
+    "author": "Thomas A. Edison",
+    "category": "Failure"
+  },
+  {
+    "id": "q184",
+    "text": "Life is really simple, but we insist on making it complicated.",
+    "author": "Confucius",
+    "category": "Simplicity"
+  },
+  {
+    "id": "q185",
+    "text": "Life itself is the most wonderful fairy tale.",
+    "author": "Hans Christian Andersen",
+    "category": "Life"
+  },
+  {
+    "id": "q186",
+    "text": "Do not let making a living prevent you from making a life.",
+    "author": "John Wooden",
+    "category": "Life"
+  },
+  {
+    "id": "q187",
+    "text": "Life is ours to be spent, not to be saved.",
+    "author": "D.H. Lawrence",
+    "category": "Life"
+  },
+  {
+    "id": "q188",
+    "text": "Love the life you live. Live the life you love.",
+    "author": "Bob Marley",
+    "category": "Life"
+  },
+  {
+    "id": "q189",
+    "text": "Life is a long lesson in humility.",
+    "author": "James M. Barrie",
+    "category": "Humility"
+  },
+  {
+    "id": "q190",
+    "text": "In three words I can sum up everything I've learned about life: it goes on.",
+    "author": "Robert Frost",
+    "category": "Life"
+  },
+  {
+    "id": "q191",
+    "text": "Love is the only force capable of transforming an enemy into a friend.",
+    "author": "Martin Luther King, Jr.",
+    "category": "Love"
+  },
+  {
+    "id": "q192",
+    "text": "There is no charm equal to tenderness of heart.",
+    "author": "Jane Austen",
+    "category": "Love"
+  },
+  {
+    "id": "q193",
+    "text": "Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.",
+    "author": "Lao Tzu",
+    "category": "Love"
+  },
+  {
+    "id": "q194",
+    "text": "Love is composed of a single soul inhabiting two bodies.",
+    "author": "Aristotle",
+    "category": "Love"
+  },
+  {
+    "id": "q195",
+    "text": "The best and most beautiful things in this world cannot be seen or even heard, but must be felt with the heart.",
+    "author": "Helen Keller",
+    "category": "Love"
+  },
+  {
+    "id": "q196",
+    "text": "Keep love in your heart. A life without it is like a sunless garden when the flowers are dead.",
+    "author": "Oscar Wilde",
+    "category": "Love"
+  },
+  {
+    "id": "q197",
+    "text": "The only thing we never get enough of is love; and the only thing we never give enough of is love.",
+    "author": "Henry Miller",
+    "category": "Love"
+  },
+  {
+    "id": "q198",
+    "text": "Life without love is like a tree without blossoms or fruit.",
+    "author": "Khalil Gibran",
+    "category": "Love"
+  },
+  {
+    "id": "q199",
+    "text": "Tis better to have loved and lost than never to have loved at all.",
+    "author": "Alfred Lord Tennyson",
+    "category": "Love"
+  },
+  {
+    "id": "q200",
+    "text": "You know you're in love when you can't fall asleep because reality is finally better than your dreams.",
+    "author": "Dr. Seuss",
+    "category": "Love"
   }
 ]

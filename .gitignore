@@ -44,3 +44,12 @@ yarn-error.*
 *.keystore
 *.aab
 *.apk
+
+# ios build files
+*.xcarchive
+*.xcworkspace
+*.xcodeproj
+*.ipa
+*.cer
+*.mobileprovision
+*.p12
