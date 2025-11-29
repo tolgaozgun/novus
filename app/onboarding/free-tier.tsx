@@ -24,7 +24,6 @@ export default function FreeTierScreen() {
                     </View>
 
                     <Text style={[styles.title, { color: theme.text }]}>Totally Free.</Text>
-                    <Text style={[styles.title, { color: theme.accent }]}>Forever.</Text>
 
                     <Text style={[styles.subtitle, { color: theme.textSecondary }]}>
                         Novus is a community-driven project. No paywalls, no hidden fees, just pure motivation.
