@@ -7,14 +7,9 @@ import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { BlurView } from 'expo-blur';
 
-const { width, height } = Dimensions.get('window');
+import quotesData from '../../data/quotes.json';
 
-// Mock data - in a real app this would come from an API or local storage based on onboarding
-const DAILY_QUOTE = {
-    text: "The only way to do great work is to love what you do.",
-    author: "Steve Jobs",
-    category: "Productivity"
-};
+const { width, height } = Dimensions.get('window');
 
 const FOCUS_AREA = "Reducing Anxiety"; // Mock selection
 
@@ -23,12 +18,17 @@ export default function DailyBriefingScreen() {
     const { theme } = useTheme();
     const { user } = useUser();
     const [greeting, setGreeting] = useState('Good Morning');
+    const [dailyQuote, setDailyQuote] = useState(quotesData[0]);
 
     useEffect(() => {
         const hour = new Date().getHours();
         if (hour < 12) setGreeting('Good Morning');
         else if (hour < 18) setGreeting('Good Afternoon');
         else setGreeting('Good Evening');
+
+        // Pick a random quote
+        const randomQuote = quotesData[Math.floor(Math.random() * quotesData.length)];
+        setDailyQuote(randomQuote);
     }, []);
 
     return (
@@ -50,7 +50,10 @@ export default function DailyBriefingScreen() {
                         <Text style={[styles.greeting, { color: theme.textSecondary }]}>{greeting},</Text>
                         <Text style={[styles.username, { color: theme.text }]}>{user.name}</Text>
                     </View>
-                    <TouchableOpacity style={[styles.profileButton, { backgroundColor: theme.cardBackground }]}>
+                    <TouchableOpacity
+                        style={[styles.profileButton, { backgroundColor: theme.cardBackground }]}
+                        onPress={() => router.push('/(tabs)/profile')}
+                    >
                         <Ionicons name="person" size={20} color={theme.text} />
                     </TouchableOpacity>
                 </View>
@@ -60,8 +63,8 @@ export default function DailyBriefingScreen() {
                     <Text style={[styles.sectionTitle, { color: theme.textSecondary }]}>YOUR DAILY FUEL</Text>
                     <BlurView intensity={80} tint="dark" style={styles.quoteCard}>
                         <Ionicons name="chatbox-ellipses" size={32} color={theme.accent} style={styles.quoteIcon} />
-                        <Text style={[styles.quoteText, { color: theme.text }]}>"{DAILY_QUOTE.text}"</Text>
-                        <Text style={[styles.quoteAuthor, { color: theme.accent }]}>— {DAILY_QUOTE.author}</Text>
+                        <Text style={[styles.quoteText, { color: theme.text }]}>"{dailyQuote.text}"</Text>
+                        <Text style={[styles.quoteAuthor, { color: theme.accent }]}>— {dailyQuote.author}</Text>
 
                         <View style={styles.cardActions}>
                             <TouchableOpacity style={styles.actionButton}>
