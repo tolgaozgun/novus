@@ -53,3 +53,6 @@ yarn-error.*
 *.cer
 *.mobileprovision
 *.p12
+
+references/
+*.md
