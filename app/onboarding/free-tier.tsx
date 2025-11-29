@@ -4,15 +4,20 @@ import { useRouter } from 'expo-router';
 import { useTheme } from '../../context/ThemeContext';
 import OnboardingWrapper from '../../components/onboarding/OnboardingWrapper';
 import { Ionicons } from '@expo/vector-icons';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function FreeTierScreen() {
     const router = useRouter();
     const { theme } = useTheme();
 
-    const handleContinue = () => {
-        // Complete onboarding
-        // TODO: Set onboarding completed flag
-        router.replace('/(tabs)');
+    const handleContinue = async () => {
+        try {
+            await AsyncStorage.setItem('onboardingCompleted', 'true');
+            router.replace('/(tabs)');
+        } catch (e) {
+            console.error('Failed to save onboarding status');
+            router.replace('/(tabs)');
+        }
     };
 
     return (

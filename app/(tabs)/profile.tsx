@@ -17,6 +17,7 @@ export default function ProfileScreen() {
         { id: 'history', label: 'History', icon: 'time', route: '/history' },
         { id: 'collections', label: 'Collections', icon: 'albums', route: '/collections' },
         { id: 'settings', label: 'Settings', icon: 'settings', route: '/settings' },
+        { id: 'onboarding', label: "Change what you've told us", icon: 'refresh', route: '/onboarding/welcome' },
     ];
 
     return (
