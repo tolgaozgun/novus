@@ -15,6 +15,7 @@ export default function ProfileScreen() {
     const { user } = useUser();
 
     const MENU_ITEMS = [
+        { id: 'diary', label: 'My Diary', icon: 'book', route: '/diary' },
         { id: 'favorites', label: 'My Favorites', icon: 'heart', route: '/(tabs)/favorites' },
         { id: 'history', label: 'History', icon: 'time', route: '/history' },
         { id: 'collections', label: 'Collections', icon: 'albums', route: '/collections' },

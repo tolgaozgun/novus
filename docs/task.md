@@ -12,8 +12,9 @@
     - [x] Implement `customization.tsx` (Icon, Theme) <!-- id: 9 -->
 - [/] **Phase 3: Deep Personalization** <!-- id: 10 -->
     - [/] Implement `wellness.tsx` (Mental Health, Obstacles) <!-- id: 11 -->
-    - [/] Implement `mood-baseline.tsx` (Mood Tracker) <!-- id: 12 -->
+    - [x] Implement `mood-baseline.tsx` (Mood Tracker & Reflection Flow) <!-- id: 12 -->
     - [/] Implement `goals.tsx` (Outcome, Custom Input) <!-- id: 13 -->
+    - [x] Implement `diary` (Journaling System) <!-- id: 21 -->
 - [x] **Phase 4: Value Proposition (Free Forever)** <!-- id: 14 -->
     - [x] Implement `free-tier.tsx` (No Paywall, Community Focus) <!-- id: 15 -->
 - [x] **Phase 5: Core Experience** <!-- id: 17 -->

@@ -211,22 +211,14 @@ export default function DailyBriefingScreen() {
                     <Text style={[styles.sectionTitle, { color: theme.textSecondary }]}>DAILY ACTION</Text>
                     <TouchableOpacity
                         style={[styles.actionCard, { backgroundColor: theme.accent }]}
-                        onPress={() => router.push({
-                            pathname: '/action-detail',
-                            params: {
-                                title: focusData.actionTitle,
-                                subtitle: focusData.actionSubtitle,
-                                icon: focusData.actionIcon,
-                                description: focusData.description
-                            }
-                        })}
+                        onPress={() => router.push('/reflection/mood')}
                     >
                         <View style={styles.actionContent}>
-                            <Text style={[styles.actionTitle, { color: '#000' }]}>{focusData.actionTitle}</Text>
-                            <Text style={[styles.actionSubtitle, { color: 'rgba(0,0,0,0.7)' }]}>{focusData.actionSubtitle}</Text>
+                            <Text style={[styles.actionTitle, { color: '#000' }]}>Reflect on Your Day</Text>
+                            <Text style={[styles.actionSubtitle, { color: 'rgba(0,0,0,0.7)' }]}>Log your mood & thoughts</Text>
                         </View>
                         <View style={[styles.playButton, { backgroundColor: 'rgba(0,0,0,0.1)' }]}>
-                            <Ionicons name={focusData.actionIcon as any} size={24} color="#000" />
+                            <Ionicons name="journal" size={24} color="#000" />
                         </View>
                     </TouchableOpacity>
                 </View>
