@@ -4,8 +4,9 @@ import { View } from 'react-native';
 import { Colors } from '../constants/Colors';
 
 import { FavoritesProvider } from '../context/FavoritesContext';
-import { ThemeProvider, useTheme } from '../context/ThemeContext';
+import { HistoryProvider } from '../context/HistoryContext';
 import { JournalProvider } from '../context/JournalContext';
+import { ThemeProvider, useTheme } from '../context/ThemeContext';
 import { UserProvider } from '../context/UserContext';
 
 function AppLayout() {
@@ -30,9 +31,11 @@ export default function RootLayout() {
         <ThemeProvider>
             <UserProvider>
                 <FavoritesProvider>
-                    <JournalProvider>
-                        <AppLayout />
-                    </JournalProvider>
+                    <HistoryProvider>
+                        <JournalProvider>
+                            <AppLayout />
+                        </JournalProvider>
+                    </HistoryProvider>
                 </FavoritesProvider>
             </UserProvider>
         </ThemeProvider>

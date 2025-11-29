@@ -18,6 +18,7 @@ interface UserProfile {
     moodBaseline: number;
     goals: string[];
     customGoal: string;
+    dailyFocusId: string | null;
 }
 
 const defaultProfile: UserProfile = {
@@ -37,6 +38,7 @@ const defaultProfile: UserProfile = {
     moodBaseline: 5,
     goals: [],
     customGoal: '',
+    dailyFocusId: null,
 };
 
 interface UserContextType {

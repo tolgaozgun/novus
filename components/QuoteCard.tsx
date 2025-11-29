@@ -14,13 +14,15 @@ interface QuoteCardProps {
     quote: Quote;
     isFavorite: boolean;
     onToggleFavorite: () => void;
-    onShare?: () => void; // Optional now as we handle it internally
+    onShare?: () => void;
+    mode?: 'full' | 'compact';
 }
 
 export const QuoteCard: React.FC<QuoteCardProps> = ({
     quote,
     isFavorite,
     onToggleFavorite,
+    mode = 'full',
 }) => {
     const cardRef = useRef<View>(null);
     const { theme } = useTheme();
@@ -34,6 +36,31 @@ export const QuoteCard: React.FC<QuoteCardProps> = ({
         Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
         await shareQuoteAsImage(cardRef);
     };
+
+    if (mode === 'compact') {
+        return (
+            <View style={[styles.compactContainer, { backgroundColor: theme.cardBackground }]}>
+                <View style={styles.compactContent}>
+                    <Text style={[styles.compactCategory, { color: theme.accent }]}>{quote.category.toUpperCase()}</Text>
+                    <Text style={[styles.compactText, { color: theme.text }]}>"{quote.text}"</Text>
+                    <Text style={[styles.compactAuthor, { color: theme.textSecondary }]}>- {quote.author}</Text>
+                </View>
+
+                <View style={styles.compactActions}>
+                    <TouchableOpacity onPress={handleFavorite} style={styles.compactActionButton}>
+                        <Ionicons
+                            name={isFavorite ? 'heart' : 'heart-outline'}
+                            size={24}
+                            color={isFavorite ? theme.heart : theme.textSecondary}
+                        />
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={handleShare} style={styles.compactActionButton}>
+                        <Ionicons name="share-social-outline" size={24} color={theme.textSecondary} />
+                    </TouchableOpacity>
+                </View>
+            </View>
+        );
+    }
 
     return (
         <View style={styles.container}>
@@ -102,7 +129,7 @@ const styles = StyleSheet.create({
         fontWeight: '300',
         textAlign: 'center',
         lineHeight: 40,
-        fontFamily: 'System', // Use system font for simplicity, or load a custom one later
+        fontFamily: 'System',
     },
     author: {
         fontSize: 16,
@@ -122,5 +149,44 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         overflow: 'hidden',
+    },
+    // Compact styles
+    compactContainer: {
+        padding: 20,
+        borderRadius: 20,
+        marginBottom: 15,
+        width: '100%',
+    },
+    compactContent: {
+        marginBottom: 15,
+    },
+    compactCategory: {
+        fontSize: 10,
+        fontWeight: '700',
+        letterSpacing: 1,
+        marginBottom: 10,
+        opacity: 0.8,
+    },
+    compactText: {
+        fontSize: 18,
+        fontWeight: '400',
+        lineHeight: 26,
+        marginBottom: 10,
+    },
+    compactAuthor: {
+        fontSize: 14,
+        fontStyle: 'italic',
+        opacity: 0.7,
+    },
+    compactActions: {
+        flexDirection: 'row',
+        justifyContent: 'flex-end',
+        gap: 15,
+        borderTopWidth: 1,
+        borderTopColor: 'rgba(255,255,255,0.1)',
+        paddingTop: 15,
+    },
+    compactActionButton: {
+        padding: 5,
     },
 });
