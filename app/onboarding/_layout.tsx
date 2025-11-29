@@ -19,6 +19,10 @@ export default function OnboardingLayout() {
             <Stack.Screen name="commitment" />
             <Stack.Screen name="notifications" />
             <Stack.Screen name="customization" />
+            <Stack.Screen name="wellness" />
+            <Stack.Screen name="mood-baseline" />
+            <Stack.Screen name="goals" />
+            <Stack.Screen name="free-tier" />
         </Stack>
     );
 }

@@ -10,13 +10,12 @@
     - [x] Implement `commitment.tsx` (Streak, Habit Alarm) <!-- id: 7 -->
     - [x] Implement `notifications.tsx` (Soft Ask, Frequency) <!-- id: 8 -->
     - [x] Implement `customization.tsx` (Icon, Theme) <!-- id: 9 -->
-- [ ] **Phase 3: Deep Personalization** <!-- id: 10 -->
-    - [ ] Implement `wellness.tsx` (Mental Health, Obstacles) <!-- id: 11 -->
-    - [ ] Implement `mood-baseline.tsx` (Mood Tracker) <!-- id: 12 -->
-    - [ ] Implement `goals.tsx` (Outcome, Custom Input) <!-- id: 13 -->
-- [ ] **Phase 4: Monetization** <!-- id: 14 -->
-    - [ ] Implement `paywall` directory and `trial-offer.tsx` <!-- id: 15 -->
-    - [ ] Implement `value-prop.tsx` <!-- id: 16 -->
+- [/] **Phase 3: Deep Personalization** <!-- id: 10 -->
+    - [/] Implement `wellness.tsx` (Mental Health, Obstacles) <!-- id: 11 -->
+    - [/] Implement `mood-baseline.tsx` (Mood Tracker) <!-- id: 12 -->
+    - [/] Implement `goals.tsx` (Outcome, Custom Input) <!-- id: 13 -->
+- [x] **Phase 4: Value Proposition (Free Forever)** <!-- id: 14 -->
+    - [x] Implement `free-tier.tsx` (No Paywall, Community Focus) <!-- id: 15 -->
 - [ ] **Phase 5: Core Experience** <!-- id: 17 -->
     - [ ] Refactor `app/(tabs)/index.tsx` for Daily Briefing <!-- id: 18 -->
     - [ ] Implement `discovery.tsx` <!-- id: 19 -->

@@ -29,8 +29,15 @@ export default function NotificationsScreen() {
                 "\"Novus\" Would Like to Send You Notifications",
                 "Notifications may include alerts, sounds, and icon badges. These can be configured in Settings.",
                 [
-                    { text: "Don't Allow", style: "cancel", onPress: () => setStep('frequency') },
-                    { text: "Allow", onPress: () => setStep('frequency') }
+                    {
+                        text: "Don't Allow",
+                        style: "cancel",
+                        onPress: () => router.push('/onboarding/customization')
+                    },
+                    {
+                        text: "Allow",
+                        onPress: () => setStep('frequency')
+                    }
                 ]
             );
         } else {
@@ -49,7 +56,7 @@ export default function NotificationsScreen() {
 
     const handleSkip = () => {
         if (step === 'soft_ask') {
-            setStep('frequency');
+            router.push('/onboarding/customization');
         } else {
             router.push('/onboarding/customization');
         }
