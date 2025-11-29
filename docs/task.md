@@ -16,7 +16,7 @@
     - [/] Implement `goals.tsx` (Outcome, Custom Input) <!-- id: 13 -->
 - [x] **Phase 4: Value Proposition (Free Forever)** <!-- id: 14 -->
     - [x] Implement `free-tier.tsx` (No Paywall, Community Focus) <!-- id: 15 -->
-- [ ] **Phase 5: Core Experience** <!-- id: 17 -->
-    - [ ] Refactor `app/(tabs)/index.tsx` for Daily Briefing <!-- id: 18 -->
-    - [ ] Implement `discovery.tsx` <!-- id: 19 -->
-    - [ ] Implement `profile.tsx` <!-- id: 20 -->
+- [x] **Phase 5: Core Experience** <!-- id: 17 -->
+    - [x] Refactor `app/(tabs)/index.tsx` for Daily Briefing <!-- id: 18 -->
+    - [x] Implement `discovery.tsx` <!-- id: 19 -->
+    - [x] Implement `profile.tsx` <!-- id: 20 -->

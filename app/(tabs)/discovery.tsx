@@ -8,10 +8,11 @@ import { useRouter } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import { BlurView } from 'expo-blur';
 import { useTheme } from '../../context/ThemeContext';
+import { LinearGradient } from 'expo-linear-gradient';
 
 const { height } = Dimensions.get('window');
 
-export default function ExploreScreen() {
+export default function DiscoveryScreen() {
     const router = useRouter();
     const [quotes] = useState<Quote[]>(quotesData);
     const { isFavorite, toggleFavorite } = useFavorites();
@@ -35,6 +36,16 @@ export default function ExploreScreen() {
 
     return (
         <View style={[styles.container, { backgroundColor: theme.background }]}>
+            {/* Background Elements */}
+            <LinearGradient
+                colors={[theme.accent, 'transparent']}
+                style={styles.backgroundGradient}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 1 }}
+            />
+            <View style={[styles.orb, { backgroundColor: theme.accentSecondary, top: height * 0.1, left: -50 }]} />
+            <View style={[styles.orb, { backgroundColor: theme.accent, bottom: height * 0.2, right: -50 }]} />
+
             <FlatList
                 data={quotes}
                 renderItem={renderItem}
@@ -50,14 +61,6 @@ export default function ExploreScreen() {
                     index,
                 })}
             />
-
-            <View style={styles.topActions}>
-                <TouchableOpacity onPress={() => router.push('/settings')} style={styles.iconButtonWrapper}>
-                    <BlurView intensity={20} tint="dark" style={styles.iconButton}>
-                        <Ionicons name="settings-outline" size={24} color={theme.icon} />
-                    </BlurView>
-                </TouchableOpacity>
-            </View>
         </View>
     );
 }
@@ -66,28 +69,25 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
     },
+    backgroundGradient: {
+        position: 'absolute',
+        left: 0,
+        right: 0,
+        top: 0,
+        height: height,
+        opacity: 0.3,
+    },
+    orb: {
+        position: 'absolute',
+        width: 200,
+        height: 200,
+        borderRadius: 100,
+        opacity: 0.2,
+        filter: 'blur(50px)',
+    },
     pageContainer: {
         height: height,
         justifyContent: 'center',
         alignItems: 'center',
-    },
-    topActions: {
-        position: 'absolute',
-        top: 60,
-        right: 20,
-        zIndex: 10,
-        gap: 15,
-    },
-    iconButtonWrapper: {
-        marginBottom: 10,
-    },
-    iconButton: {
-        width: 44,
-        height: 44,
-        borderRadius: 22,
-        justifyContent: 'center',
-        alignItems: 'center',
-        overflow: 'hidden',
-        backgroundColor: 'rgba(255,255,255,0.1)',
     },
 });
