@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useTheme } from '../../context/ThemeContext';
+import { useUser } from '../../context/UserContext';
 import OnboardingWrapper from '../../components/onboarding/OnboardingWrapper';
 import { Ionicons } from '@expo/vector-icons';
 import Slider from '@react-native-community/slider';
@@ -9,10 +10,11 @@ import Slider from '@react-native-community/slider';
 export default function MoodBaselineScreen() {
     const router = useRouter();
     const { theme } = useTheme();
+    const { updateUser } = useUser();
     const [mood, setMood] = useState(5);
 
-    const handleContinue = () => {
-        // TODO: Save mood baseline
+    const handleContinue = async () => {
+        await updateUser({ moodBaseline: mood });
         router.push('/onboarding/goals');
     };
 
@@ -20,7 +22,8 @@ export default function MoodBaselineScreen() {
         router.back();
     };
 
-    const handleSkip = () => {
+    const handleSkip = async () => {
+        await updateUser({ moodBaseline: 5 });
         router.push('/onboarding/goals');
     };
 

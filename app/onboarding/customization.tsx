@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useTheme } from '../../context/ThemeContext';
+import { useUser } from '../../context/UserContext';
 import { Themes } from '../../constants/Colors';
 import OnboardingWrapper from '../../components/onboarding/OnboardingWrapper';
 import { Ionicons } from '@expo/vector-icons';
@@ -24,15 +25,17 @@ const THEMES_LIST = [
 export default function CustomizationScreen() {
     const router = useRouter();
     const { theme, setThemeId, currentThemeId } = useTheme();
+    const { updateUser } = useUser();
     const [step, setStep] = useState<Step>('icon');
     const [selectedIcon, setSelectedIcon] = useState('default');
 
-    const handleContinue = () => {
+    const handleContinue = async () => {
         if (step === 'icon') {
+            await updateUser({ appIcon: selectedIcon });
             setStep('theme');
         } else {
-            // TODO: Save customization
-            // Move to Phase 3: Deep Personalization
+            // Theme is already handled by ThemeContext, but we can save it to user profile too if needed
+            // For now, just proceed
             router.push('/onboarding/wellness');
         }
     };
@@ -45,8 +48,9 @@ export default function CustomizationScreen() {
         }
     };
 
-    const handleSkip = () => {
+    const handleSkip = async () => {
         if (step === 'icon') {
+            await updateUser({ appIcon: 'default' });
             setStep('theme');
         } else {
             router.push('/onboarding/wellness');

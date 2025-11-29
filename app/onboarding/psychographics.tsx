@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useTheme } from '../../context/ThemeContext';
+import { useUser } from '../../context/UserContext';
 import OnboardingWrapper from '../../components/onboarding/OnboardingWrapper';
 import SelectionOption from '../../components/onboarding/SelectionOption';
 import { Ionicons } from '@expo/vector-icons';
@@ -23,20 +24,22 @@ const TRIGGERS = [
 export default function PsychographicsScreen() {
     const router = useRouter();
     const { theme } = useTheme();
+    const { updateUser } = useUser();
     const [step, setStep] = useState<Step>('source');
 
     const [source, setSource] = useState<string[]>([]);
     const [painPoints, setPainPoints] = useState<string[]>([]);
     const [trigger, setTrigger] = useState('');
 
-    const handleContinue = () => {
+    const handleContinue = async () => {
         if (step === 'source' && source.length > 0) {
+            await updateUser({ motivationSources: source });
             setStep('pain_points');
         } else if (step === 'pain_points' && painPoints.length > 0) {
+            await updateUser({ painPoints });
             setStep('triggers');
         } else if (step === 'triggers' && trigger) {
-            // TODO: Save psychographics
-            // Move to Phase 2: Commitment
+            await updateUser({ toneTriggers: [trigger] });
             router.push('/onboarding/commitment');
         }
     };

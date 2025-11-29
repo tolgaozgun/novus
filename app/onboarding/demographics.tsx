@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, TextInput, TouchableOpacity, KeyboardAvoidingView, Platform } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useTheme } from '../../context/ThemeContext';
+import { useUser } from '../../context/UserContext';
 import OnboardingWrapper from '../../components/onboarding/OnboardingWrapper';
 import SelectionOption from '../../components/onboarding/SelectionOption';
 import { Ionicons } from '@expo/vector-icons';
@@ -19,19 +20,22 @@ const GENDERS = [
 export default function DemographicsScreen() {
     const router = useRouter();
     const { theme } = useTheme();
+    const { updateUser } = useUser();
     const [step, setStep] = useState<Step>('name');
 
     const [name, setName] = useState('');
     const [ageRange, setAgeRange] = useState('');
     const [gender, setGender] = useState('');
 
-    const handleContinue = () => {
+    const handleContinue = async () => {
         if (step === 'name' && name.trim()) {
+            await updateUser({ name });
             setStep('age');
         } else if (step === 'age' && ageRange) {
+            await updateUser({ age: ageRange });
             setStep('gender');
         } else if (step === 'gender' && gender) {
-            // TODO: Save demographics
+            await updateUser({ gender });
             router.push('/onboarding/psychographics');
         }
     };
@@ -121,8 +125,9 @@ export default function DemographicsScreen() {
         return false;
     };
 
-    const handleSkip = () => {
+    const handleSkip = async () => {
         if (step === 'name') {
+            await updateUser({ name: 'Traveler' });
             setStep('age');
         } else if (step === 'age') {
             setStep('gender');

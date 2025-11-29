@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Switch, Platform, Pressable, Animated, Vibration } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useTheme } from '../../context/ThemeContext';
+import { useUser } from '../../context/UserContext';
 import OnboardingWrapper from '../../components/onboarding/OnboardingWrapper';
 import { Ionicons } from '@expo/vector-icons';
 import DateTimePicker from '@react-native-community/datetimepicker';
@@ -12,6 +13,7 @@ type Step = 'contract' | 'alarm';
 export default function CommitmentScreen() {
     const router = useRouter();
     const { theme } = useTheme();
+    const { updateUser } = useUser();
     const [step, setStep] = useState<Step>('contract');
 
     const [signed, setSigned] = useState(false);
@@ -24,11 +26,12 @@ export default function CommitmentScreen() {
     const timerRef = useRef<NodeJS.Timeout | null>(null);
     const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
-    const handleContinue = () => {
+    const handleContinue = async () => {
         if (step === 'contract') {
+            await updateUser({ pledgeSigned: true });
             setStep('alarm');
         } else {
-            // TODO: Save commitment settings
+            await updateUser({ alarmTime: alarmEnabled ? alarmTime.toISOString() : null });
             router.push('/onboarding/notifications');
         }
     };

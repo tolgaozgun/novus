@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, ScrollView, TextInput, KeyboardAvoidingView, Platform } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useTheme } from '../../context/ThemeContext';
+import { useUser } from '../../context/UserContext';
 import OnboardingWrapper from '../../components/onboarding/OnboardingWrapper';
 import SelectionOption from '../../components/onboarding/SelectionOption';
 
@@ -16,6 +17,7 @@ const GOALS = [
 export default function GoalsScreen() {
     const router = useRouter();
     const { theme } = useTheme();
+    const { updateUser } = useUser();
     const [selectedGoals, setSelectedGoals] = useState<string[]>([]);
     const [customGoal, setCustomGoal] = useState('');
 
@@ -27,9 +29,8 @@ export default function GoalsScreen() {
         }
     };
 
-    const handleContinue = () => {
-        // TODO: Save goals
-        // End of Phase 3, move to Phase 4 (Free Tier)
+    const handleContinue = async () => {
+        await updateUser({ goals: selectedGoals, customGoal });
         router.push('/onboarding/free-tier');
     };
 
@@ -37,7 +38,8 @@ export default function GoalsScreen() {
         router.back();
     };
 
-    const handleSkip = () => {
+    const handleSkip = async () => {
+        await updateUser({ goals: [], customGoal: '' });
         router.push('/onboarding/free-tier');
     };
 

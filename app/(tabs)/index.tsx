@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity, ImageBackground, Dimensions } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useTheme } from '../../context/ThemeContext';
+import { useUser } from '../../context/UserContext';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { BlurView } from 'expo-blur';
@@ -20,6 +21,7 @@ const FOCUS_AREA = "Reducing Anxiety"; // Mock selection
 export default function DailyBriefingScreen() {
     const router = useRouter();
     const { theme } = useTheme();
+    const { user } = useUser();
     const [greeting, setGreeting] = useState('Good Morning');
 
     useEffect(() => {
@@ -46,7 +48,7 @@ export default function DailyBriefingScreen() {
                 <View style={styles.header}>
                     <View>
                         <Text style={[styles.greeting, { color: theme.textSecondary }]}>{greeting},</Text>
-                        <Text style={[styles.username, { color: theme.text }]}>Traveler</Text>
+                        <Text style={[styles.username, { color: theme.text }]}>{user.name}</Text>
                     </View>
                     <TouchableOpacity style={[styles.profileButton, { backgroundColor: theme.cardBackground }]}>
                         <Ionicons name="person" size={20} color={theme.text} />

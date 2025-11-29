@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image, Alert } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useTheme } from '../../context/ThemeContext';
+import { useUser } from '../../context/UserContext';
 import OnboardingWrapper from '../../components/onboarding/OnboardingWrapper';
 import SelectionOption from '../../components/onboarding/SelectionOption';
 import { Ionicons } from '@expo/vector-icons';
@@ -18,6 +19,7 @@ const FREQUENCIES = [
 export default function NotificationsScreen() {
     const router = useRouter();
     const { theme } = useTheme();
+    const { user, updateUser } = useUser();
     const [step, setStep] = useState<Step>('soft_ask');
     const [frequency, setFrequency] = useState('5');
 
@@ -32,16 +34,22 @@ export default function NotificationsScreen() {
                     {
                         text: "Don't Allow",
                         style: "cancel",
-                        onPress: () => router.push('/onboarding/customization')
+                        onPress: async () => {
+                            await updateUser({ notificationsEnabled: false });
+                            router.push('/onboarding/customization');
+                        }
                     },
                     {
                         text: "Allow",
-                        onPress: () => setStep('frequency')
+                        onPress: async () => {
+                            await updateUser({ notificationsEnabled: true });
+                            setStep('frequency');
+                        }
                     }
                 ]
             );
         } else {
-            // TODO: Save notification settings
+            await updateUser({ notificationFrequency: frequency });
             router.push('/onboarding/customization');
         }
     };
@@ -54,10 +62,12 @@ export default function NotificationsScreen() {
         }
     };
 
-    const handleSkip = () => {
+    const handleSkip = async () => {
         if (step === 'soft_ask') {
+            await updateUser({ notificationsEnabled: false });
             router.push('/onboarding/customization');
         } else {
+            await updateUser({ notificationFrequency: '5' });
             router.push('/onboarding/customization');
         }
     };
@@ -86,7 +96,7 @@ export default function NotificationsScreen() {
                     <Text style={[styles.previewAppName, { color: theme.textSecondary }]}>NOVUS</Text>
                     <Text style={[styles.previewTime, { color: theme.textSecondary }]}>now</Text>
                 </View>
-                <Text style={[styles.previewTitle, { color: theme.text }]}>Time to focus, {theme.name === 'Midnight' ? 'User' : 'Friend'}</Text>
+                <Text style={[styles.previewTitle, { color: theme.text }]}>Time to focus, {user.name || 'Friend'}</Text>
                 <Text style={[styles.previewBody, { color: theme.textSecondary }]}>
                     "The only way to do great work is to love what you do."
                 </Text>

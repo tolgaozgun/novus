@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Dimensions } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useTheme } from '../../context/ThemeContext';
+import { useUser } from '../../context/UserContext';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { BlurView } from 'expo-blur';
@@ -11,6 +12,7 @@ const { width, height } = Dimensions.get('window');
 export default function ProfileScreen() {
     const router = useRouter();
     const { theme } = useTheme();
+    const { user } = useUser();
 
     const MENU_ITEMS = [
         { id: 'favorites', label: 'My Favorites', icon: 'heart', route: '/(tabs)/favorites' },
@@ -34,7 +36,7 @@ export default function ProfileScreen() {
                     <View style={[styles.avatar, { backgroundColor: theme.cardBackground }]}>
                         <Ionicons name="person" size={40} color={theme.textSecondary} />
                     </View>
-                    <Text style={[styles.name, { color: theme.text }]}>Traveler</Text>
+                    <Text style={[styles.name, { color: theme.text }]}>{user.name}</Text>
                     <Text style={[styles.stats, { color: theme.textSecondary }]}>7 Day Streak • 42 Quotes Read</Text>
                 </View>
 

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useTheme } from '../../context/ThemeContext';
+import { useUser } from '../../context/UserContext';
 import OnboardingWrapper from '../../components/onboarding/OnboardingWrapper';
 import SelectionOption from '../../components/onboarding/SelectionOption';
 
@@ -27,6 +28,7 @@ const OBSTACLES = [
 export default function WellnessScreen() {
     const router = useRouter();
     const { theme } = useTheme();
+    const { updateUser } = useUser();
     const [step, setStep] = useState<Step>('focus');
     const [selectedFocus, setSelectedFocus] = useState<string[]>([]);
     const [selectedObstacles, setSelectedObstacles] = useState<string[]>([]);
@@ -39,11 +41,12 @@ export default function WellnessScreen() {
         }
     };
 
-    const handleContinue = () => {
+    const handleContinue = async () => {
         if (step === 'focus') {
+            await updateUser({ wellnessFocus: selectedFocus });
             setStep('obstacles');
         } else {
-            // TODO: Save wellness data
+            await updateUser({ wellnessObstacles: selectedObstacles });
             router.push('/onboarding/mood-baseline');
         }
     };
@@ -56,10 +59,12 @@ export default function WellnessScreen() {
         }
     };
 
-    const handleSkip = () => {
+    const handleSkip = async () => {
         if (step === 'focus') {
+            await updateUser({ wellnessFocus: [] });
             setStep('obstacles');
         } else {
+            await updateUser({ wellnessObstacles: [] });
             router.push('/onboarding/mood-baseline');
         }
     };
