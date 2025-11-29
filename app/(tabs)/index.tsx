@@ -59,7 +59,7 @@ export default function DailyBriefingScreen() {
                 <View style={styles.section}>
                     <Text style={[styles.sectionTitle, { color: theme.textSecondary }]}>YOUR DAILY FUEL</Text>
                     <BlurView intensity={80} tint="dark" style={styles.quoteCard}>
-                        <Ionicons name={"quote" as any} size={32} color={theme.accent} style={styles.quoteIcon} />
+                        <Ionicons name="chatbox-ellipses" size={32} color={theme.accent} style={styles.quoteIcon} />
                         <Text style={[styles.quoteText, { color: theme.text }]}>"{DAILY_QUOTE.text}"</Text>
                         <Text style={[styles.quoteAuthor, { color: theme.accent }]}>— {DAILY_QUOTE.author}</Text>
 
