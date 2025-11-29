@@ -1,0 +1,23 @@
+# Task List - Novus Spin-off
+
+- [x] **Phase 1: The "Hook" Onboarding** <!-- id: 0 -->
+    - [x] Create `app/onboarding` directory structure <!-- id: 1 -->
+    - [x] Implement `welcome.tsx` (Value Prop) <!-- id: 2 -->
+    - [x] Implement `attribution.tsx` (Marketing Source) <!-- id: 3 -->
+    - [x] Implement `demographics.tsx` (Age, Name, Identity) <!-- id: 4 -->
+    - [x] Implement `psychographics.tsx` (Motivation, Pain Points) <!-- id: 5 -->
+- [x] **Phase 2: Engagement & Commitment** <!-- id: 6 -->
+    - [x] Implement `commitment.tsx` (Streak, Habit Alarm) <!-- id: 7 -->
+    - [x] Implement `notifications.tsx` (Soft Ask, Frequency) <!-- id: 8 -->
+    - [x] Implement `customization.tsx` (Icon, Theme) <!-- id: 9 -->
+- [ ] **Phase 3: Deep Personalization** <!-- id: 10 -->
+    - [ ] Implement `wellness.tsx` (Mental Health, Obstacles) <!-- id: 11 -->
+    - [ ] Implement `mood-baseline.tsx` (Mood Tracker) <!-- id: 12 -->
+    - [ ] Implement `goals.tsx` (Outcome, Custom Input) <!-- id: 13 -->
+- [ ] **Phase 4: Monetization** <!-- id: 14 -->
+    - [ ] Implement `paywall` directory and `trial-offer.tsx` <!-- id: 15 -->
+    - [ ] Implement `value-prop.tsx` <!-- id: 16 -->
+- [ ] **Phase 5: Core Experience** <!-- id: 17 -->
+    - [ ] Refactor `app/(tabs)/index.tsx` for Daily Briefing <!-- id: 18 -->
+    - [ ] Implement `discovery.tsx` <!-- id: 19 -->
+    - [ ] Implement `profile.tsx` <!-- id: 20 -->

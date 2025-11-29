@@ -16,6 +16,9 @@ export default function OnboardingLayout() {
             <Stack.Screen name="attribution" />
             <Stack.Screen name="demographics" />
             <Stack.Screen name="psychographics" />
+            <Stack.Screen name="commitment" />
+            <Stack.Screen name="notifications" />
+            <Stack.Screen name="customization" />
         </Stack>
     );
 }
