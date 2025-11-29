@@ -18,7 +18,7 @@ export default function ProfileScreen() {
         { id: 'favorites', label: 'My Favorites', icon: 'heart', route: '/(tabs)/favorites' },
         { id: 'history', label: 'History', icon: 'time', route: '/history' },
         { id: 'collections', label: 'Collections', icon: 'albums', route: '/collections' },
-        { id: 'settings', label: 'Settings', icon: 'settings', route: '/settings' },
+        { id: 'settings', label: 'Theme Colors', icon: 'color-palette', route: '/settings' },
         { id: 'onboarding', label: "Change what you've told us", icon: 'refresh', route: '/onboarding/welcome' },
     ];
 
@@ -56,9 +56,7 @@ export default function ProfileScreen() {
                     ))}
                 </View>
 
-                <TouchableOpacity style={styles.logoutButton}>
-                    <Text style={[styles.logoutText, { color: theme.textSecondary }]}>Sign Out</Text>
-                </TouchableOpacity>
+
             </ScrollView>
         </View>
     );

@@ -16,7 +16,7 @@ export default function SettingsScreen() {
                 <TouchableOpacity onPress={() => router.back()} style={styles.backButton}>
                     <Ionicons name="arrow-back" size={24} color={theme.text} />
                 </TouchableOpacity>
-                <Text style={[styles.title, { color: theme.text }]}>Settings</Text>
+                <Text style={[styles.title, { color: theme.text }]}>Theme Colors</Text>
             </BlurView>
 
             <ScrollView contentContainerStyle={styles.content}>
