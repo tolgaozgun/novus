@@ -12,6 +12,7 @@
     - [x] Security (OAuth2 Resource Server + Basic Auth for Swagger)
     - [x] Swagger/OpenAPI setup
     - [x] Global Exception Handling & Request Logging
+    - [x] Keycloak Role Mapping (`JwtAuthenticationConverter`)
 - [x] Service Layer Implementation
     - [x] `QuoteService` & `QuoteController`
     - [x] `ContentService` (Books/Movies)
