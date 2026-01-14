@@ -5,7 +5,6 @@ This document outlines the database schema for the **Motivational Quotes Daily**
 ## Overview
 - **Database**: PostgreSQL 15+
 - **ORM**: Hibernate / JPA
-- **Migration**: Flyway
 
 ## Tables
 
